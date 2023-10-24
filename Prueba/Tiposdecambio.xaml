@@ -1,0 +1,74 @@
+﻿<Window x:Class="Prueba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba"
+        mc:Ignorable="d"
+        Title="MainWindow"  Height="450" Width="800" MinHeight="450" MinWidth="800" MaxWidth="800" MaxHeight="450"> 
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                <SkewTransform AngleY="0" AngleX="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#0061FF" Offset="0" />
+                <!--aqua-->
+                <!--azul-->
+                <GradientStop Color="#606fff" Offset="0.539" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="610*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="15,69,0,0" Stroke="White" VerticalAlignment="Top" Width="390"/>
+
+
+        <Rectangle Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="228,69,0,0" Stroke="White" VerticalAlignment="Top" Width="89"/>
+
+
+        <Rectangle Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="140,69,0,0" Stroke="White" VerticalAlignment="Top" Width="89"/>
+
+
+        <Rectangle Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="15,96,0,0" Stroke="White" VerticalAlignment="Top" Width="390"/>
+
+
+        <Label x:Name="TipoScra1" Content="Tipo de Cambio (Scraping):" HorizontalAlignment="Left" Margin="92,34,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="2"/>
+        <Label x:Name="FechaScra1" Content="dd/mm/yyyy" HorizontalAlignment="Left" Margin="42,100,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White"/>
+        <Label x:Name="TFechaScra1" Content="Fecha" HorizontalAlignment="Left" Margin="60,71,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="FIXScra1" Content="0.0" HorizontalAlignment="Left" Margin="173,100,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White"/>
+        <Label x:Name="TFIXScra1" Content="FIX" HorizontalAlignment="Left" Margin="173,71,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="DOFScra1" Content="0.0" HorizontalAlignment="Left" Margin="258,100,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White"/>
+        <Label x:Name="TDOFScra1" Content="DOF" HorizontalAlignment="Left" Margin="259,71,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="Para_Pagos1" Content="0.0" HorizontalAlignment="Left" Margin="346,100,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White"/>
+        <Label x:Name="TPara_Pagos1" Content="Para Pagos" HorizontalAlignment="Left" Margin="322,71,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White" FontWeight="Bold" Width="82"/>
+
+
+        <Label x:Name="TipoApi1" Content="Tipo de Cambio (API):" HorizontalAlignment="Left" Margin="123,209,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="ValorApi1" Content="0.0" HorizontalAlignment="Left" Margin="173,245,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="#FFFDFDFD" RenderTransformOrigin="-0.385,0.577"/>
+        <Label x:Name="Usuario1" Content="User" HorizontalAlignment="Left" Margin="462,15,0,0" VerticalAlignment="Top" Grid.Column="2" Foreground="White"/>
+        <Button x:Name="button1Scra" Content="Consultar" Grid.Column="2" HorizontalAlignment="Left" Margin="173,136,0,0" VerticalAlignment="Top" Width="75" FontWeight="Medium" BorderBrush="White" BorderThickness="2" Background="#00DDDDDD"  Foreground="White" Click="Button1Scra_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="button1API" Content="Consultar" Grid.Column="2" HorizontalAlignment="Left" Margin="165,284,0,0" VerticalAlignment="Top" Width="76" FontWeight="Medium" BorderBrush="White" BorderThickness="2" Background="#00DDDDDD" Foreground="White" Click="Button1API_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+    </Grid>
+</Window>

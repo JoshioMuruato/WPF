@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_aa0609_usuariosModelStoreContainer" CdmEntityContainer="db_aa0609_usuariosEntities1">
+    <FunctionImportMapping FunctionImportName="sp_users_app" FunctionName="db_aa0609_usuariosModel.Store.sp_users_app" />
+  </EntityContainerMapping>
+</Mapping>

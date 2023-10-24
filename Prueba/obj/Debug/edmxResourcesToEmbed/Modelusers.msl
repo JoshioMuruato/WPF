@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_aa0609_usuariosModelStoreContainer" CdmEntityContainer="db_aa0609_usuariosEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="db_aa0609_usuariosModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_users_app" FunctionName="db_aa0609_usuariosModel.Store.sp_users_app" />
+    <FunctionImportMapping FunctionImportName="sp_users_register" FunctionName="db_aa0609_usuariosModel.Store.sp_users_register" />
+  </EntityContainerMapping>
+</Mapping>
